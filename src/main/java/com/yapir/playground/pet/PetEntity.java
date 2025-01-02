@@ -43,8 +43,8 @@ public class PetEntity {
 
     @Override
     public boolean equals(Object o) {
+        if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-
         PetEntity petEntity = (PetEntity) o;
         return Objects.equals(id, petEntity.id);
     }
